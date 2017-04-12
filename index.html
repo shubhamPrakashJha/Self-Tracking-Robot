@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="right-panel">
+    <div>
+        <b>Start:</b>
+        <select id="start">
+            <option value="bengaluru, in">bengaluru, in</option>
+            <option value="mysuru, in">mysuru, in</option>
+            <option value="chennai, in">chennai, in</option>
+            <option value="Miami, FL">Miami, FL</option>
+        </select>
+        <br>
+        <b>Waypoints:</b>
+        <br>
+        <i>(Ctrl+Click or Cmd+Click for multiple selection)</i>
+        <br>
+        <select multiple id="waypoints">
+            <option value="bengaluru, in">Bengaluru, IN</option>
+            <option value="mysuru, in">mysuru, inT</option>
+            <option value="chennai, in">chennai, in</option>
+            <option value="winnipeg, mb">Winnipeg</option>
+            <option value="fargo, nd">Fargo</option>
+            <option value="calgary, ab">Calgary</option>
+            <option value="spokane, wa">Spokane</option>
+        </select>
+        <br>
+        <b>End:</b>
+        <select id="end">
+            <option value="bengaluru, in">bengaluru, in</option>
+            <option value="mysuru, in">mysuru, in</option>
+            <option value="chennai, in">chennai, in</option>
+            <option value="Los Angeles, CA">Los Angeles, CA</option>
+        </select>
+        <br>
+        <input type="submit" id="submit">
+    </div>
+    <div id="directions-panel"></div>
+</div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+
+
+</script>
+
+</body>
+</html>
